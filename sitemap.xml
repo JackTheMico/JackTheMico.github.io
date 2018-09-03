@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jackthemico.github.io/2018/09/my-first-blog/</loc>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jackthemico.github.io/2015/06/welcome-to-tranquilpeak-0.4.3-beta/</loc>
     <lastmod>2015-06-15T00:00:00+00:00</lastmod>
   </url>
@@ -63,10 +68,6 @@
   </url>
   
   <url>
-    <loc>https://jackthemico.github.io/1/01/</loc>
-  </url>
-  
-  <url>
     <loc>https://jackthemico.github.io/archives/</loc>
     <priority>0</priority>
   </url>
@@ -84,7 +85,7 @@
   
   <url>
     <loc>https://jackthemico.github.io/content/</loc>
-    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -138,7 +139,7 @@
   
   <url>
     <loc>https://jackthemico.github.io/tags/highlight-code/</loc>
-    <lastmod>2015-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -151,6 +152,12 @@
   <url>
     <loc>https://jackthemico.github.io/tags/image-gallery/</loc>
     <lastmod>2013-02-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://jackthemico.github.io/categories/jack-deng/</loc>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -210,7 +217,7 @@
   
   <url>
     <loc>https://jackthemico.github.io/tags/test/</loc>
-    <lastmod>2015-03-23T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -234,7 +241,7 @@
   
   <url>
     <loc>https://jackthemico.github.io/</loc>
-    <lastmod>2015-06-15T00:00:00+00:00</lastmod>
+    <lastmod>2018-09-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
