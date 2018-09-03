@@ -18,21 +18,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.31 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Html Elements</title>
+    <title>Mysql</title>
     <meta name="author" content="Deng Liangwen">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://jackthemico.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jackthemico.github.io/tags/html-elements/index.xml">
+      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jackthemico.github.io/tags/mysql/index.xml">
     
 
     
     <meta name="description" content="Hugo tranquilpeak theme demo">
     <meta property="og:description" content="Hugo tranquilpeak theme demo">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Html Elements">
-    <meta property="og:url" content="/tags/html-elements/">
+    <meta property="og:title" content="Mysql">
+    <meta property="og:url" content="/tags/mysql/">
     <meta property="og:site_name" content="Welcome to Jack Deng Blog">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Welcome to Jack Deng Blog">
@@ -224,16 +224,16 @@
     
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://jackthemico.github.io/2015/05/elements-showcase/">
-          Elements showcase
+        <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/">
+          MySQL实现TOP PERCENT
         </a>
       </h1>
       
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2015-05-28T00:00:00Z">
+      <time itemprop="datePublished" datetime="2018-09-03T00:00:00Z">
         
-  五月 28, 2015
+  九月 3, 2018
 
       </time>
     
@@ -242,9 +242,9 @@
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://jackthemico.github.io/categories/tranquilpeak">tranquilpeak</a>, 
+      <a class="category-link" href="https://jackthemico.github.io/categories/jack-deng">Jack Deng</a>, 
     
-      <a class="category-link" href="https://jackthemico.github.io/categories/features">features</a>
+      <a class="category-link" href="https://jackthemico.github.io/categories/mysql">MySQL</a>
     
   
 
@@ -252,18 +252,20 @@
 
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&rsquo;s simple and elegant.
-</p>
+       在MySQL里实现TOP PERCENT的方法  archives.sql     1
+2
+3
+  SELECT COUNT(*)*50/100 into @percent FROM students; PREPARE stmt FROM &#34;SELECT * FROM students limit ?&#34;; EXECUTE stmt using @percent;      
       <p>
-        <a href="https://jackthemico.github.io/2015/05/elements-showcase/" class="postShorten-excerpt_link link">阅读全文</a>
+        <a href="https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/" class="postShorten-excerpt_link link">阅读全文</a>
         
       </p>
     </div>
   </div>
   
-    <a href="https://jackthemico.github.io/2015/05/elements-showcase/">
+    <a href="https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/">
       <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="//d1u9biwaxjngwg.cloudfront.net/elements-showcase/vintage-140.jpg"/>
+        <img alt="" itemprop="image" src="//d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg"/>
       </div>
     </a>
   

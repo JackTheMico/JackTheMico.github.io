@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Highlight Code on Welcome to Jack Deng Blog</title>
-    <link>https://jackthemico.github.io/tags/highlight-code/</link>
-    <description>Recent content in Highlight Code on Welcome to Jack Deng Blog</description>
+    <title>Mysql on Welcome to Jack Deng Blog</title>
+    <link>https://jackthemico.github.io/categories/mysql/</link>
+    <description>Recent content in Mysql on Welcome to Jack Deng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
     <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
     <lastBuildDate>Mon, 03 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jackthemico.github.io/tags/highlight-code/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jackthemico.github.io/categories/mysql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,16 +23,6 @@
 2
 3
   SELECT COUNT(*)*50/100 into @percent FROM students; PREPARE stmt FROM &amp;#34;SELECT * FROM students limit ?&amp;#34;; EXECUTE stmt using @percent;      </description>
-    </item>
-    
-    <item>
-      <title>highlighted code showcase</title>
-      <link>https://jackthemico.github.io/2015/03/highlighted-code-showcase/</link>
-      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/2015/03/highlighted-code-showcase/</guid>
-      <description>&lt;p&gt;Tranquilpeak Hugo theme have its own theme to highlight source code. It&amp;rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
-&lt;/p&gt;</description>
     </item>
     
   </channel>

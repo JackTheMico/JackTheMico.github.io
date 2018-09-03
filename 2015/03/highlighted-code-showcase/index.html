@@ -2513,27 +2513,18 @@ func main() {
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/my-first-blog/">
-                <h3 class="media-heading">my first blog</h3>
+              <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/">
+                <h3 class="media-heading">MySQL实现TOP PERCENT</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
                   Sep 9, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather"> Python  archives.pyarchives.py     1
+              <div class="media-content hide-xs font-merryweather"> 在MySQL里实现TOP PERCENT的方法  archives.sql     1
 2
 3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-  @requires_authorization def somefunc(param1=&#39;&#39;, param2=0): r&#39;&#39;&#39;A docstring&#39;&#39;&#39; if param1 &gt; param2: # interesting print &#39;Gre\&#39;ater&#39; return (param2 - param1 &#43; 1 &#43; 0b10l) or None class SomeClass: pass &gt;&gt;&gt; message = &#39;&#39;&#39;interpreter ... prompt&#39;&#39;&#39;      </div>
+  SELECT COUNT(*)*50/100 into @percent FROM students; PREPARE stmt FROM &#34;SELECT * FROM students limit ?&#34;; EXECUTE stmt using @percent;      </div>
             </div>
             <div style="clear:both;"></div>
             <hr>
