@@ -6,6 +6,8 @@
     <description>Recent content in Categories on Welcome to Jack Deng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
+    <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
     
 	<atom:link href="https://jackthemico.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +16,7 @@
       <title>Features</title>
       <link>https://jackthemico.github.io/categories/features/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/categories/features/</guid>
       <description></description>
     </item>
@@ -23,7 +25,7 @@
       <title>Releases</title>
       <link>https://jackthemico.github.io/categories/releases/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/categories/releases/</guid>
       <description></description>
     </item>
@@ -32,7 +34,7 @@
       <title>Tranquilpeak</title>
       <link>https://jackthemico.github.io/categories/tranquilpeak/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/categories/tranquilpeak/</guid>
       <description></description>
     </item>

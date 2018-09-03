@@ -6,6 +6,8 @@
     <description>Recent content on Welcome to Jack Deng Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
+    <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
     <lastBuildDate>Mon, 15 Jun 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jackthemico.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +17,7 @@
       <title>Welcome to Tranquilpeak 0.4.3-BETA</title>
       <link>https://jackthemico.github.io/2015/06/welcome-to-tranquilpeak-0.4.3-beta/</link>
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2015/06/welcome-to-tranquilpeak-0.4.3-beta/</guid>
       <description>&lt;p&gt;Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 &lt;/p&gt;</description>
@@ -25,7 +27,7 @@
       <title>Elements showcase</title>
       <link>https://jackthemico.github.io/2015/05/elements-showcase/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2015/05/elements-showcase/</guid>
       <description>&lt;p&gt;Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&amp;rsquo;s simple and elegant.
 &lt;/p&gt;</description>
@@ -35,7 +37,7 @@
       <title>Cover image showcase</title>
       <link>https://jackthemico.github.io/2015/05/cover-image-showcase/</link>
       <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2015/05/cover-image-showcase/</guid>
       <description>&lt;p&gt;Tranquilpeak integrate a unique &amp;ldquo;cover image&amp;rdquo; feature. Open this post to see how this feature sublimate your article.&lt;/p&gt;</description>
     </item>
@@ -44,7 +46,7 @@
       <title>highlighted code showcase</title>
       <link>https://jackthemico.github.io/2015/03/highlighted-code-showcase/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2015/03/highlighted-code-showcase/</guid>
       <description>&lt;p&gt;Tranquilpeak Hugo theme have its own theme to highlight source code. It&amp;rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
 &lt;/p&gt;</description>
@@ -54,7 +56,7 @@
       <title>Tags plugins showcase</title>
       <link>https://jackthemico.github.io/2014/10/tags-plugins-showcase/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2014/10/tags-plugins-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how tag plugins are displayed. See &lt;a href=&#34;https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags&#34;&gt;docs&lt;/a&gt; for more info.
 &lt;/p&gt;</description>
@@ -64,7 +66,7 @@
       <title>Hidden social section showcase</title>
       <link>https://jackthemico.github.io/2014/08/hidden-social-section-showcase/</link>
       <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2014/08/hidden-social-section-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the social section is hidden.
 &lt;/p&gt;</description>
@@ -74,7 +76,7 @@
       <title>Hidden tag section showcase</title>
       <link>https://jackthemico.github.io/2014/08/hidden-tag-section-showcase/</link>
       <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2014/08/hidden-tag-section-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.
 &lt;/p&gt;</description>
@@ -84,7 +86,7 @@
       <title>Hidden pagination showcase</title>
       <link>https://jackthemico.github.io/2014/08/hidden-pagination-showcase/</link>
       <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2014/08/hidden-pagination-showcase/</guid>
       <description>&lt;p&gt;This post is used to show how a site looks if the pagination is hidden.
 &lt;/p&gt;</description>
@@ -94,7 +96,7 @@
       <title>Video integrations showcase</title>
       <link>https://jackthemico.github.io/2014/08/video-integrations-showcase/</link>
       <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2014/08/video-integrations-showcase/</guid>
       <description>&lt;p&gt;Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
 &lt;/p&gt;</description>
@@ -104,7 +106,7 @@
       <title>中文測試</title>
       <link>https://jackthemico.github.io/2013/10/chinese-test/</link>
       <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2013/10/chinese-test/</guid>
       <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.
 &lt;/p&gt;</description>
@@ -114,7 +116,7 @@
       <title>Image gallery showcase</title>
       <link>https://jackthemico.github.io/2013/02/image-gallery-showcase/</link>
       <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2013/02/image-gallery-showcase/</guid>
       <description>&lt;p&gt;And here is the image gallery!
 &lt;/p&gt;</description>
@@ -124,10 +126,32 @@
       <title>日本語テスト</title>
       <link>https://jackthemico.github.io/2013/01/japanese-test/</link>
       <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
-      
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2013/01/japanese-test/</guid>
       <description>&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.
 &lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://jackthemico.github.io/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/1/01/</guid>
+      <description>title: &amp;ldquo;my first blog&amp;rdquo; date: 2018-09-03 categories: - Jack Deng tags: - test - highlight code thumbnailImagePosition: right thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/highlighted-code-showcase/peak-140.jpg
+Python  archives.pyarchives.py     1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+  @requires_authorization def somefunc(param1=&amp;#39;&amp;#39;, param2=0): r&amp;#39;&amp;#39;&amp;#39;A docstring&amp;#39;&amp;#39;&amp;#39; if param1 &amp;gt; param2: # interesting print &amp;#39;Gre\&amp;#39;ater&amp;#39; return (param2 - param1 &amp;#43; 1 &amp;#43; 0b10l) or None class SomeClass: pass &amp;gt;&amp;gt;&amp;gt; message = &amp;#39;&amp;#39;&amp;#39;interpreter .</description>
     </item>
     
   </channel>
