@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Welcome to Jack Deng Blog</title>
+    <title>Categories on Jack Deng&#39;s Blogs</title>
     <link>https://jackthemico.github.io/categories/</link>
-    <description>Recent content in Categories on Welcome to Jack Deng Blog</description>
+    <description>Recent content in Categories on Jack Deng&#39;s Blogs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
@@ -18,15 +18,6 @@
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/categories/features/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jack Deng</title>
-      <link>https://jackthemico.github.io/categories/jack-deng/</link>
-      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
-      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/categories/jack-deng/</guid>
       <description></description>
     </item>
     
@@ -54,6 +45,15 @@
       <pubDate>Mon, 15 Jun 2015 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/categories/tranquilpeak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Xpath</title>
+      <link>https://jackthemico.github.io/categories/xpath/</link>
+      <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/categories/xpath/</guid>
       <description></description>
     </item>
     

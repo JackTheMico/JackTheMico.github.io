@@ -33,9 +33,9 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Hexo Theme">
     <meta property="og:url" content="/tags/hexo-theme/">
-    <meta property="og:site_name" content="Welcome to Jack Deng Blog">
+    <meta property="og:site_name" content="Jack Deng&#39;s Blogs">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Welcome to Jack Deng Blog">
+    <meta name="twitter:title" content="Jack Deng&#39;s Blogs">
     <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
     
     
@@ -74,7 +74,7 @@
       <header id="header" data-behavior="1">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="https://jackthemico.github.io/">Welcome to Jack Deng Blog</a>
+    <a class="header-title-link" href="https://jackthemico.github.io/">Jack Deng&#39;s Blogs</a>
   </div>
   
     
@@ -100,7 +100,7 @@
         </a>
         <h4 class="sidebar-profile-name">Deng Liangwen</h4>
         
-          <h5 class="sidebar-profile-bio">Happy life, happy coding is <strong>SO COOL</strong></h5>
+          <h5 class="sidebar-profile-bio">mail: dlwxxxdlw@163.com<br>telephone: 13880337161</h5>
         
       </div>
     
@@ -293,13 +293,13 @@
     
     <h4 id="about-card-name">Deng Liangwen</h4>
     
-      <div id="about-card-bio">Happy life, happy coding is <strong>SO COOL</strong></div>
+      <div id="about-card-bio">mail: dlwxxxdlw@163.com<br>telephone: 13880337161</div>
     
     
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        Python programming
+        Python, looking for a new job
       </div>
     
     
@@ -342,10 +342,35 @@
                   Sep 9, 2018
                 </span>
               </span>
-              <div class="media-content hide-xs font-merryweather"> 在MySQL里实现TOP PERCENT的方法  archives.sql     1
+              <div class="media-content hide-xs font-merryweather">MySQL中limit语法详解 SELECT * FROM table LIMIT [offset,] rows | rows OFFSET offset LIMIT 子句可以被用于强制 SELECT 语句返回指定的记录数。LIMIT 接受一个或两个数字参数。参数必须是一个整数常量。 如果给定两个参数，第一个参数指定第一个返回记录行的偏移量，第二个参数指定返回记录行的最大数目。 初始记录行的偏移量是 0(而不是 1)
+示例代码  example     1
 2
 3
-  SELECT COUNT(*)*50/100 into @percent FROM students; PREPARE stmt FROM &#34;SELECT * FROM students limit ?&#34;; EXECUTE stmt using @percent;      </div>
+4
+5
+  select * from table limit 5; --返回前5行 select * from table limit 0,5; --同上，返回前5行 select * from table limit 5,10; --返回6-15行      如何优化limit 当一个查询语句偏移量offset很大的时候，如select * from table limit 10000,10 , 最好不要直接使用limit，而是先获取到offset的id后，再直接使用limit size来获取数据，效果会好很多。 如：  example     1</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/%E5%9C%A8xpath%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                <h3 class="media-heading">在xpath中使用正则表达式</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">xpath中使用正则表达式 其实我自己也从来没用到过，在此记录一下，万一以后会用到呢。
+比如有个网站正文部分是： //*[@id='postmessage_32199']
+另一个同级别页面的正文是： //*[@id='postmessage_32153']
+要抓取这种正文其实可以用xpath： //*[starts-with(@id, 'postmessage_')]
+或者 //*[contains(@id, 'postmessage_')]
+也可以选择在xpath中使用正则表达式：doc.xpath(r'//*[re:match(@id, &quot;postmessage_\d+&quot;)]', namespace={&quot;re&quot;: &quot;http://exslt.org/regular-expressions&quot;})</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -494,24 +519,6 @@
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://jackthemico.github.io/2014/08/video-integrations-showcase/">
-                <h3 class="media-heading">Video integrations showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -519,7 +526,7 @@
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         13 posts found
+         14 posts found
       </p>
     </div>
   </div>
