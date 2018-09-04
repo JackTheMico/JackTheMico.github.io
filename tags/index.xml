@@ -8,19 +8,10 @@
     <language>en-us</language>
     <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
     <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
-    <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2015 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jackthemico.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Chinese</title>
-      <link>https://jackthemico.github.io/tags/chinese/</link>
-      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/tags/chinese/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Cover Image</title>
@@ -113,15 +104,6 @@
     </item>
     
     <item>
-      <title>Japanese</title>
-      <link>https://jackthemico.github.io/tags/japanese/</link>
-      <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
-      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/tags/japanese/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Markdown</title>
       <link>https://jackthemico.github.io/tags/markdown/</link>
       <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
@@ -145,6 +127,15 @@
       <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/tags/pagination/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pandas</title>
+      <link>https://jackthemico.github.io/tags/pandas/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/tags/pandas/</guid>
       <description></description>
     </item>
     

@@ -8,10 +8,37 @@
     <language>en-us</language>
     <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
     <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
-    <lastBuildDate>Mon, 03 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jackthemico.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pandas基础</title>
+      <link>https://jackthemico.github.io/2018/09/pandas%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/2018/09/pandas%E5%9F%BA%E7%A1%80/</guid>
+      <description>原文地址 pandas是Python中开源的，高性能的用于数据分析的库。其中包含了很多可用的数据结构及功能，各种结构支持相互转换，并且支持读取、保存数据。结合matplotlib库，可以将数据已图表的形式可视化，反映出数据的各项特征。 先借用一张图来描述一下pandas的一些基本使用方法，下面会通过一些实例对这些知识点进行应用。 pandas的基本数据结构 1.Seris Seris是一维的，带索引的数组，支持多种数据类型。可以使用列表进行转换：  example     1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+  import pandas as pd s = pd.Series([3, -5, 7, 4], index=[&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;, &amp;#39;d&amp;#39;]) print(s) # result a 3 b -5 c 7 d 4 dtype: int64 # 也可以重新指定索引 s.index = [&amp;#39;A&amp;#39;, &amp;#39;B&amp;#39;, &amp;#39;C&amp;#39;, &amp;#39;D&amp;#39;] print(s) # result A 3 B -5 C 7 D 4 dtype: int64</description>
+    </item>
     
     <item>
       <title>MySQL实现TOP PERCENT</title>
@@ -132,32 +159,12 @@
     </item>
     
     <item>
-      <title>中文測試</title>
-      <link>https://jackthemico.github.io/2013/10/chinese-test/</link>
-      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
-      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/2013/10/chinese-test/</guid>
-      <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Image gallery showcase</title>
       <link>https://jackthemico.github.io/2013/02/image-gallery-showcase/</link>
       <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
       <guid>https://jackthemico.github.io/2013/02/image-gallery-showcase/</guid>
       <description>&lt;p&gt;And here is the image gallery!
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>日本語テスト</title>
-      <link>https://jackthemico.github.io/2013/01/japanese-test/</link>
-      <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
-      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/2013/01/japanese-test/</guid>
-      <description>&lt;p&gt;This is a Japanese test post to show you how japanese is displayed.
 &lt;/p&gt;</description>
     </item>
     

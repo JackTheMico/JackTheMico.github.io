@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Matplotlib on Jack Deng&#39;s Blogs</title>
+    <link>https://jackthemico.github.io/tags/matplotlib/</link>
+    <description>Recent content in Matplotlib on Jack Deng&#39;s Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
+    <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
+    <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackthemico.github.io/tags/matplotlib/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pandas与Matplotlib基础</title>
+      <link>https://jackthemico.github.io/2018/09/pandas%E4%B8%8Ematplotlib%E5%9F%BA%E7%A1%80/</link>
+      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/2018/09/pandas%E4%B8%8Ematplotlib%E5%9F%BA%E7%A1%80/</guid>
+      <description> 原文地址 pandas是Python中开源的，高性能的用于数据分析的库。其中包含了很多可用的数据结构及功能，各种结构支持相互转换，并且支持读取、保存数据。结合matplotlib库，可以将数据已图表的形式可视化，反映出数据的各项特征。 先借用一张图来描述一下pandas的一些基本使用方法，下面会通过一些实例对这些知识点进行应用。 </description>
+    </item>
+    
+  </channel>
+</rss>

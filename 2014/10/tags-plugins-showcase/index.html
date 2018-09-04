@@ -1166,12 +1166,6 @@ dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac 
   
   
 
-  
-  
-  
-  
-  
-
 
   
     
@@ -1188,8 +1182,6 @@ dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac 
         <li class="tab active">js</li>
       
         <li class="tab ">css</li>
-      
-        <li class="tab ">html</li>
       
     </ul>
   </figcaption> 
@@ -1232,7 +1224,7 @@ dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac 
           <tbody>
             <tr>
               <td class="gutter">
-                <pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br></pre>
+                <pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br><span>25</span><br><span>26</span><br><span>27</span><br><span>28</span><br><span>29</span><br><span>30</span><br><span>31</span><br><span>32</span><br><span>33</span><br><span>34</span><br><span>35</span><br><span>36</span><br><span>37</span><br><span>38</span><br><span>39</span><br><span>40</span><br><span>41</span><br><span>42</span><br><span>43</span><br><span>44</span><br><span>45</span><br><span>46</span><br><span>47</span><br><span>48</span><br><span>49</span><br><span>50</span><br><span>51</span><br><span>52</span><br></pre>
               </td>
               <td class="code">
                 <pre class="code-highlight language-css"><code class="css">@media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -1259,23 +1251,11 @@ li[lang=ru] {
   font: Tahoma, Chunkfive, sans-serif;
   background: url(&#39;hatch.png&#39;) /* wtf? */;  color: #F0F0F0 !important;
   width: 100%;
-}</code></pre>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </figure>
-    
-      
-      <figure class="highlight language-html" style="display: none;">   
-        <table>
-          <tbody>
-            <tr>
-              <td class="gutter">
-                <pre><span>1</span><br><span>2</span><br><span>3</span><br><span>4</span><br><span>5</span><br><span>6</span><br><span>7</span><br><span>8</span><br><span>9</span><br><span>10</span><br><span>11</span><br><span>12</span><br><span>13</span><br><span>14</span><br><span>15</span><br><span>16</span><br><span>17</span><br><span>18</span><br><span>19</span><br><span>20</span><br><span>21</span><br><span>22</span><br><span>23</span><br><span>24</span><br></pre>
-              </td>
-              <td class="code">
-                <pre class="code-highlight language-html"><code class="html">&lt;?xml version=&#34;1.0&#34;?&gt;
+}
+&lt;!-- endtab --
+&gt;
+&lt;!-- tab html --&gt;
+&lt;?xml version=&#34;1.0&#34;?&gt;
 &lt;response value=&#34;ok&#34; xml:lang=&#34;en&#34;&gt;
   &lt;text&gt;Ok&lt;/text&gt;
   &lt;comment html_allowed=&#34;true&#34;/&gt;
@@ -1600,6 +1580,41 @@ li[lang=ru] {
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/pandas%E5%9F%BA%E7%A1%80/">
+                <h3 class="media-heading">Pandas基础</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">原文地址 pandas是Python中开源的，高性能的用于数据分析的库。其中包含了很多可用的数据结构及功能，各种结构支持相互转换，并且支持读取、保存数据。结合matplotlib库，可以将数据已图表的形式可视化，反映出数据的各项特征。 先借用一张图来描述一下pandas的一些基本使用方法，下面会通过一些实例对这些知识点进行应用。 pandas的基本数据结构 1.Seris Seris是一维的，带索引的数组，支持多种数据类型。可以使用列表进行转换：  example     1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+  import pandas as pd s = pd.Series([3, -5, 7, 4], index=[&#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;]) print(s) # result a 3 b -5 c 7 d 4 dtype: int64 # 也可以重新指定索引 s.index = [&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;] print(s) # result A 3 B -5 C 7 D 4 dtype: int64</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/">
                 <h3 class="media-heading">MySQL实现TOP PERCENT</h3>
               </a>
@@ -1767,24 +1782,6 @@ li[lang=ru] {
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://jackthemico.github.io/2014/08/hidden-pagination-showcase/">
-                <h3 class="media-heading">Hidden pagination showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the pagination is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -1792,7 +1789,7 @@ li[lang=ru] {
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         14 posts found
+         13 posts found
       </p>
     </div>
   </div>
