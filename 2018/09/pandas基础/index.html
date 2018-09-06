@@ -770,7 +770,7 @@ print(df[&#39;length&#39;].rank()) # 根据列值进行排名 </code></pre>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/" data-tooltip="leetcode MySQL 查询第二（第n）高的薪水">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jackthemico.github.io/2018/09/leetcode-mysql-%E9%83%A8%E9%97%A8%E5%B7%A5%E8%B5%84%E5%89%8D%E4%B8%89%E9%AB%98%E7%9A%84%E5%91%98%E5%B7%A5/" data-tooltip="leetcode MySQL 部门工资前三高的员工">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -856,7 +856,7 @@ print(df[&#39;length&#39;].rank()) # 根据列值进行排名 </code></pre>
           
             <li class="post-action">
               
-                <a class="post-action-btn btn btn--default tooltip--top" href="https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/" data-tooltip="leetcode MySQL 查询第二（第n）高的薪水">
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jackthemico.github.io/2018/09/leetcode-mysql-%E9%83%A8%E9%97%A8%E5%B7%A5%E8%B5%84%E5%89%8D%E4%B8%89%E9%AB%98%E7%9A%84%E5%91%98%E5%B7%A5/" data-tooltip="leetcode MySQL 部门工资前三高的员工">
               
                   <i class="fa fa-angle-left"></i>
                   <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
@@ -1007,6 +1007,23 @@ print(df[&#39;length&#39;].rank()) # 根据列值进行排名 </code></pre>
               </span>
               <div class="media-content hide-xs font-merryweather">MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）    Id Salary     1 100   2 200   3 300    例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
 期望结果    SecondHighestSalary     200    问题解析  有可能存在相同薪水的情况，注意去重distinct 给查询的结果起别名 用as，语法：原列名 as 新列名 分类order by，默认升序排列（ASC），降序排列（DESC） 限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1   注意题目要求：如果不存在第二高的薪水，那么查询应返回 null； 因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B   正确答案sql  correct sql     1</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/leetcode-mysql-%E9%83%A8%E9%97%A8%E5%B7%A5%E8%B5%84%E5%89%8D%E4%B8%89%E9%AB%98%E7%9A%84%E5%91%98%E5%B7%A5/">
+                <h3 class="media-heading">leetcode MySQL 部门工资前三高的员工</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">原作者博文地址  具体细节如下 Employee 表包含所有员工信息，每个员工有其对应的 Id, salary 和 department Id。    Id Name Salary DepartmentId     1 Joe 70000 1   2 Henry 80000 2   3 Sam 60000 2   4 Max 90000 1   5 Janet 69000 1   6 Randy 85000 1    Department 表包含公司所有部门的信息。    Id Name     1 IT   2 Sales    编写一个 SQL 查询，找出每个部门工资前三高的员工。例如，根据上述给定的表格，查询结果应返回：    Department Employee Salary     IT Max 90000   IT Randy 85000   IT Joe 70000   Sales Henry 80000   Sales Sam 60000    三种答案如下   Awnser One     1</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -1181,24 +1198,6 @@ print(df[&#39;length&#39;].rank()) # 根据列值进行排名 </code></pre>
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://jackthemico.github.io/2014/08/hidden-social-section-showcase/">
-                <h3 class="media-heading">Hidden social section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the social section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -1206,7 +1205,7 @@ print(df[&#39;length&#39;].rank()) # 根据列值进行排名 </code></pre>
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         14 posts found
+         15 posts found
       </p>
     </div>
   </div>
