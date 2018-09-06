@@ -1,5 +1,9 @@
 
 
+  
+    
+  
+
 
   
 
@@ -18,25 +22,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Hugo 0.31 with theme Tranquilpeak 0.4.3-BETA">
-    <title>Image Gallery</title>
+    <title>leetcode MySQL 查询第二（第n）高的薪水</title>
     <meta name="author" content="Deng Liangwen">
     <meta name="keywords" content="">
 
     <link rel="icon" href="https://jackthemico.github.io/favicon.png">
     
-      <link rel="alternate" type="application/rss+xml" title="RSS" href="https://jackthemico.github.io/tags/image-gallery/index.xml">
-    
 
     
-    <meta name="description" content="Hugo tranquilpeak theme demo">
-    <meta property="og:description" content="Hugo tranquilpeak theme demo">
+    <meta name="description" content="MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）    Id Salary     1 100   2 200   3 300    例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
+期望结果    SecondHighestSalary     200    问题解析  有可能存在相同薪水的情况，注意去重distinct 给查询的结果起别名 用as，语法：原列名 as 新列名 分类order by，默认升序排列（ASC），降序排列（DESC） 限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1   注意题目要求：如果不存在第二高的薪水，那么查询应返回 null； 因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B   正确答案sql  correct sql     1">
+    <meta property="og:description" content="MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）    Id Salary     1 100   2 200   3 300    例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
+期望结果    SecondHighestSalary     200    问题解析  有可能存在相同薪水的情况，注意去重distinct 给查询的结果起别名 用as，语法：原列名 as 新列名 分类order by，默认升序排列（ASC），降序排列（DESC） 限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1   注意题目要求：如果不存在第二高的薪水，那么查询应返回 null； 因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B   正确答案sql  correct sql     1">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Image Gallery">
-    <meta property="og:url" content="/tags/image-gallery/">
+    <meta property="og:title" content="leetcode MySQL 查询第二（第n）高的薪水">
+    <meta property="og:url" content="/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
     <meta property="og:site_name" content="Jack Deng&#39;s Blogs">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Jack Deng&#39;s Blogs">
-    <meta name="twitter:description" content="Hugo tranquilpeak theme demo">
+    <meta name="twitter:description" content="MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）    Id Salary     1 100   2 200   3 300    例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
+期望结果    SecondHighestSalary     200    问题解析  有可能存在相同薪水的情况，注意去重distinct 给查询的结果起别名 用as，语法：原列名 as 新列名 分类order by，默认升序排列（ASC），降序排列（DESC） 限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1   注意题目要求：如果不存在第二高的薪水，那么查询应返回 null； 因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B   正确答案sql  correct sql     1">
     
     
 
@@ -71,7 +76,7 @@
 
   <body>
     <div id="blog">
-      <header id="header" data-behavior="1">
+      <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
     <a class="header-title-link" href="https://jackthemico.github.io/">Jack Deng&#39;s Blogs</a>
@@ -91,7 +96,7 @@
   
 </header>
 
-      <nav id="sidebar" data-behavior="1">
+      <nav id="sidebar" data-behavior="4">
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
@@ -200,40 +205,26 @@
 </nav>
 
       
-        
 
-      
-      <div id="main" data-behavior="1"
+      <div id="main" data-behavior="4"
         class="
                hasCoverMetaIn
                ">
-        
-          <section class="postShorten-group main-content-wrap">
-            
-            
-              
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
   
-    
+    <h1 class="post-title" itemprop="headline">
+      leetcode MySQL 查询第二（第n）高的薪水
+    </h1>
   
-
-
   
-
-<article class="postShorten postShorten--thumbnailimg-left" itemscope itemType="http://schema.org/BlogPosting">
-  <div class="postShorten-wrap">
-    
-    <div class="postShorten-header">
-      <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="https://jackthemico.github.io/2013/02/image-gallery-showcase/">
-          Image gallery showcase
-        </a>
-      </h1>
-      
   <div class="postShorten-meta post-meta">
     
-      <time itemprop="datePublished" datetime="2013-02-18T00:00:00Z">
+      <time itemprop="datePublished" datetime="2018-09-06T00:00:00Z">
         
-  二月 18, 2013
+  九月 6, 2018
 
       </time>
     
@@ -242,38 +233,301 @@
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://jackthemico.github.io/categories/tranquilpeak">tranquilpeak</a>, 
-    
-      <a class="category-link" href="https://jackthemico.github.io/categories/features">features</a>
+      <a class="category-link" href="https://jackthemico.github.io/categories/mysql">mysql</a>
     
   
 
   </div>
 
-    </div>
-    <div class="postShorten-excerpt" itemprop="articleBody">
-      <p>And here is the image gallery!
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              
+
+<h1 id="mysql-编写一个-sql-查询-获取-employee-表中第-n-高的薪水-salary">MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）</h1>
+
+<table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Salary</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>200</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>300</td>
+</tr>
+</tbody>
+</table>
+
+<p>例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。</p>
+
+<h3 id="期望结果">期望结果</h3>
+
+<table>
+<thead>
+<tr>
+<th>SecondHighestSalary</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="问题解析">问题解析</h3>
+
+<ol>
+<li>有可能存在相同薪水的情况，注意去重distinct</li>
+<li>给查询的结果起别名 用as，语法：原列名 as 新列名</li>
+<li>分类order by，默认升序排列（ASC），降序排列（DESC）</li>
+<li>限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1</li>
+</ol>
+
+<div class="alert warning ">
+  <p><ul>
+<li>注意题目要求：如果不存在第二高的薪水，那么查询应返回 null；</li>
+<li>因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B</li>
+</ul>
 </p>
-      <p>
-        <a href="https://jackthemico.github.io/2013/02/image-gallery-showcase/" class="postShorten-excerpt_link link">阅读全文</a>
+</div>
+
+<h3 id="正确答案sql">正确答案sql</h3>
+
+
+  
+    
+  
+  
+    
+  
+  
+  
+
+
+<figure class="highlight sql language-sql">
+  <figcaption>
+    
+      <span>correct sql</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-sql"><code class="sql">select IFNULL 
+((select distinct Salary from Employee order by Salary desc limit 1,1), null) 
+as SecondHighestSalary;</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+<h1 id="mysql-编写一个-sql-查询-获取-employee-表中第-n-高的薪水-salary-1">MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）</h1>
+
+<table>
+<thead>
+<tr>
+<th>Id</th>
+<th>Salary</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>1</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>200</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>300</td>
+</tr>
+</tbody>
+</table>
+
+<p>例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
+<div class="alert info ">
+  <p>如果不存在第二高的薪水，那么查询应返回 null。</p>
+</div></p>
+
+<h3 id="期望结果-1">期望结果</h3>
+
+<table>
+<thead>
+<tr>
+<th>getNthHighestSalary(2)</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>200</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="正确答案sql-1">正确答案sql</h3>
+
+
+  
+    
+  
+  
+    
+  
+  
+  
+
+
+<figure class="highlight sql language-sql">
+  <figcaption>
+    
+      <span>correct sql</span>
+    
+  </figcaption>
+  <table>
+    <tbody>
+      <tr>
+        <td class="gutter">
+          <pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre>
+        </td>
+        <td class="code">
+          <pre class="code-highlight language-sql"><code class="sql">CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+Declare M Int;
+Set M=N-1;
+  RETURN (
+      # Write your MySQL query statement below.
+      select ifnull ((select distinct Salary from Employee order by Salary desc limit M, 1), null)
+  );
+END</code></pre>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</figure>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://jackthemico.github.io/tags/mysql/">mysql</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jackthemico.github.io/2018/09/pandas%E5%9F%BA%E7%A1%80/" data-tooltip="Pandas基础">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
         
-      </p>
-    </div>
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
   </div>
-  
-    <a href="https://jackthemico.github.io/2013/02/image-gallery-showcase/">
-      <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="//d1u9biwaxjngwg.cloudfront.net/image-gallery-showcase/city-140.jpg"/>
-      </div>
-    </a>
-  
-</article>
+
 
             
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
             
-
-          </section>
-        
+          </div>
+        </article>
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
     &copy; 2018 Deng Liangwen. All Rights Reserved
@@ -281,6 +535,102 @@
 </footer>
 
       </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://jackthemico.github.io/2018/09/pandas%E5%9F%BA%E7%A1%80/" data-tooltip="Pandas基础">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjackthemico.github.io%2F2018%2F09%2Fleetcode-mysql-%25E6%259F%25A5%25E8%25AF%25A2%25E7%25AC%25AC%25E4%25BA%258C%25E7%25AC%25ACn%25E9%25AB%2598%25E7%259A%2584%25E8%2596%25AA%25E6%25B0%25B4%2F">
+          <i class="fa fa-facebook-official"></i><span>分享到 Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fjackthemico.github.io%2F2018%2F09%2Fleetcode-mysql-%25E6%259F%25A5%25E8%25AF%25A2%25E7%25AC%25AC%25E4%25BA%258C%25E7%25AC%25ACn%25E9%25AB%2598%25E7%259A%2584%25E8%2596%25AA%25E6%25B0%25B4%2F">
+          <i class="fa fa-twitter"></i><span>分享到 Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3A%2F%2Fjackthemico.github.io%2F2018%2F09%2Fleetcode-mysql-%25E6%259F%25A5%25E8%25AF%25A2%25E7%25AC%25AC%25E4%25BA%258C%25E7%25AC%25ACn%25E9%25AB%2598%25E7%259A%2584%25E8%2596%25AA%25E6%25B0%25B4%2F">
+          <i class="fa fa-google-plus"></i><span>分享到 Google&#43;</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
     </div>
     
     <div id="about">
@@ -579,6 +929,32 @@ $(document).ready(function() {
 });
 </script>
 
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/jackthemico.github.io\/2018\/09\/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4\/';
+          
+            this.page.identifier = '\/2018\/09\/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'jackthemico';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
 
 
 

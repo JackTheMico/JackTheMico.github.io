@@ -8,10 +8,20 @@
     <language>en-us</language>
     <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
     <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
-    <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jackthemico.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>leetcode MySQL 查询第二（第n）高的薪水</title>
+      <link>https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/</link>
+      <pubDate>Thu, 06 Sep 2018 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/</guid>
+      <description>MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）    Id Salary     1 100   2 200   3 300    例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
+期望结果    SecondHighestSalary     200    问题解析  有可能存在相同薪水的情况，注意去重distinct 给查询的结果起别名 用as，语法：原列名 as 新列名 分类order by，默认升序排列（ASC），降序排列（DESC） 限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1   注意题目要求：如果不存在第二高的薪水，那么查询应返回 null； 因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B   正确答案sql  correct sql     1</description>
+    </item>
     
     <item>
       <title>Pandas基础</title>

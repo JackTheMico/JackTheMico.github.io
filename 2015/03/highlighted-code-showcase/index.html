@@ -2513,6 +2513,24 @@ func main() {
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/leetcode-mysql-%E6%9F%A5%E8%AF%A2%E7%AC%AC%E4%BA%8C%E7%AC%ACn%E9%AB%98%E7%9A%84%E8%96%AA%E6%B0%B4/">
+                <h3 class="media-heading">leetcode MySQL 查询第二（第n）高的薪水</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Sep 9, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">MySQL 编写一个 SQL 查询，获取 Employee 表中第 n 高的薪水（Salary）    Id Salary     1 100   2 200   3 300    例如上述 Employee 表，SQL查询应该返回 200 作为第二高的薪水。
+期望结果    SecondHighestSalary     200    问题解析  有可能存在相同薪水的情况，注意去重distinct 给查询的结果起别名 用as，语法：原列名 as 新列名 分类order by，默认升序排列（ASC），降序排列（DESC） 限制结果数量LIMIT，只有一个参数时，代表行数；2个参数时，LIMIT(偏移量，显示行数)，偏移量从0开始计数；返回第二条记录，用 Limit 1,1   注意题目要求：如果不存在第二高的薪水，那么查询应返回 null； 因此要用 IFNULL语法：IFNULL(A,B)，如果不为空返回第一个参数A，为空返回参数B   正确答案sql  correct sql     1</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="https://jackthemico.github.io/2018/09/pandas%E5%9F%BA%E7%A1%80/">
                 <h3 class="media-heading">Pandas基础</h3>
               </a>
@@ -2697,24 +2715,6 @@ func main() {
             <hr>
           </div>
         
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="https://jackthemico.github.io/2014/08/hidden-tag-section-showcase/">
-                <h3 class="media-heading">Hidden tag section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the tag section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
       </div>
     </div>
     <div class="modal-footer">
@@ -2722,7 +2722,7 @@ func main() {
          data-message-zero=""
          data-message-one=""
          data-message-other="">
-         13 posts found
+         14 posts found
       </p>
     </div>
   </div>
