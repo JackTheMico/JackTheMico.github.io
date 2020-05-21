@@ -15,10 +15,10 @@
     
     <item>
       <title>MySQL实现TOP PERCENT</title>
-      <link>https://jackthemico.github.io/content/post/mysql-top-percent/</link>
+      <link>https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/content/post/mysql-top-percent/</guid>
+      <guid>https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/</guid>
       <description>MySQL中limit语法详解 SELECT * FROM table LIMIT [offset,] rows | rows OFFSET offset LIMIT 子句可以被用于强制 SELECT 语句返回指定的记录数。LIMIT 接受一个或两个数字参数。参数必须是一个整数常量。 如果给定两个参数，第一个参数指定第一个返回记录行的偏移量，第二个参数指定返回记录行的最大数目。 初始记录行的偏移量是 0(而不是 1)
 示例代码 example1
 2

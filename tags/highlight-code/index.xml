@@ -15,19 +15,19 @@
     
     <item>
       <title>Python中的日志设置与使用</title>
-      <link>https://jackthemico.github.io/content/post/python-logging/</link>
+      <link>https://jackthemico.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E6%97%A5%E5%BF%97%E8%AE%BE%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/content/post/python-logging/</guid>
+      <guid>https://jackthemico.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E6%97%A5%E5%BF%97%E8%AE%BE%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
       <description>&lt;p&gt;记录下 Python 中常用的日志相关代码操作。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MySQL实现TOP PERCENT</title>
-      <link>https://jackthemico.github.io/content/post/mysql-top-percent/</link>
+      <link>https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/content/post/mysql-top-percent/</guid>
+      <guid>https://jackthemico.github.io/2018/09/mysql%E5%AE%9E%E7%8E%B0top-percent/</guid>
       <description>MySQL中limit语法详解 SELECT * FROM table LIMIT [offset,] rows | rows OFFSET offset LIMIT 子句可以被用于强制 SELECT 语句返回指定的记录数。LIMIT 接受一个或两个数字参数。参数必须是一个整数常量。 如果给定两个参数，第一个参数指定第一个返回记录行的偏移量，第二个参数指定返回记录行的最大数目。 初始记录行的偏移量是 0(而不是 1)
 示例代码 example1
 2
@@ -40,10 +40,10 @@
     
     <item>
       <title>在xpath中使用正则表达式</title>
-      <link>https://jackthemico.github.io/content/post/re-in-xpath/</link>
+      <link>https://jackthemico.github.io/2018/09/%E5%9C%A8xpath%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/content/post/re-in-xpath/</guid>
+      <guid>https://jackthemico.github.io/2018/09/%E5%9C%A8xpath%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description>xpath中使用正则表达式 其实我自己也从来没用到过，在此记录一下，万一以后会用到呢。
 比如有个网站正文部分是： //*[@id=&#39;postmessage_32199&#39;]
 另一个同级别页面的正文是： //*[@id=&#39;postmessage_32153&#39;]
@@ -54,10 +54,10 @@
     
     <item>
       <title>highlighted code showcase</title>
-      <link>https://jackthemico.github.io/content/post/highlighted-code-showcase/</link>
+      <link>https://jackthemico.github.io/2015/03/highlighted-code-showcase/</link>
       <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/content/post/highlighted-code-showcase/</guid>
+      <guid>https://jackthemico.github.io/2015/03/highlighted-code-showcase/</guid>
       <description>&lt;p&gt;Tranquilpeak Hugo theme have its own theme to highlight source code. It&amp;rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.&lt;/p&gt;</description>
     </item>
     
