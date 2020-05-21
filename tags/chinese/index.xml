@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chinese on Jack Deng&#39;s Blogs</title>
+    <link>https://jackthemico.github.io/tags/chinese/</link>
+    <description>Recent content in chinese on Jack Deng&#39;s Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
+    <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
+    <lastBuildDate>Wed, 02 Oct 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackthemico.github.io/tags/chinese/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>中文測試</title>
+      <link>https://jackthemico.github.io/content/post/chinese-test/</link>
+      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/content/post/chinese-test/</guid>
+      <description>&lt;p&gt;This is a chinese test post to show you how chinese is displayed.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
