@@ -15,10 +15,10 @@
     
     <item>
       <title>在xpath中使用正则表达式</title>
-      <link>https://jackthemico.github.io/content/post/re-in-xpath/</link>
+      <link>https://jackthemico.github.io/2018/09/%E5%9C%A8xpath%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</link>
       <pubDate>Mon, 03 Sep 2018 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/content/post/re-in-xpath/</guid>
+      <guid>https://jackthemico.github.io/2018/09/%E5%9C%A8xpath%E4%B8%AD%E4%BD%BF%E7%94%A8%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</guid>
       <description>xpath中使用正则表达式 其实我自己也从来没用到过，在此记录一下，万一以后会用到呢。
 比如有个网站正文部分是： //*[@id=&#39;postmessage_32199&#39;]
 另一个同级别页面的正文是： //*[@id=&#39;postmessage_32153&#39;]
