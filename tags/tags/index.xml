@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Jack Deng&#39;s Blogs</title>
+    <link>https://jackthemico.github.io/tags/tags/</link>
+    <description>Recent content in Tags on Jack Deng&#39;s Blogs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>dlwxxxdlw@163.com (Deng Liangwen)</managingEditor>
+    <webMaster>dlwxxxdlw@163.com (Deng Liangwen)</webMaster>
+    <lastBuildDate>Sat, 16 Aug 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jackthemico.github.io/tags/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hidden tag section showcase</title>
+      <link>https://jackthemico.github.io/2014/08/hidden-tag-section-showcase/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
+      <guid>https://jackthemico.github.io/2014/08/hidden-tag-section-showcase/</guid>
+      <description>&lt;p&gt;This post is used to show how a site looks if the tag section is hidden.
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
