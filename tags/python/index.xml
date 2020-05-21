@@ -15,10 +15,10 @@
     
     <item>
       <title>Python中的日志设置与使用</title>
-      <link>https://jackthemico.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E6%97%A5%E5%BF%97%E8%AE%BE%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <link>https://jackthemico.github.io/content/post/python-logging/</link>
       <pubDate>Thu, 21 May 2020 00:00:00 +0000</pubDate>
       <author>dlwxxxdlw@163.com (Deng Liangwen)</author>
-      <guid>https://jackthemico.github.io/2020/05/python%E4%B8%AD%E7%9A%84%E6%97%A5%E5%BF%97%E8%AE%BE%E7%BD%AE%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://jackthemico.github.io/content/post/python-logging/</guid>
       <description>&lt;p&gt;记录下 Python 中常用的日志相关代码操作。&lt;/p&gt;</description>
     </item>
     
