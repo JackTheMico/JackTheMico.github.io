@@ -93,6 +93,10 @@
 
     <div class="ui horizontal list">
       
+      <a class="item" href="/posts">
+        <i class="archive icon" title="归档"></i>
+      </a>
+      
       <a class="item" href="/tags">
         <i class="tags icon" title="所有标签"></i>
       </a>
@@ -187,6 +191,41 @@
   </div>
 
   
+  
+    
+    <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+      
+<article class="ui raised card dream-card" style="box-shadow: none;">
+
+  <div class="image">
+    
+      <img src="/img/default2.jpg" alt="Python 日志常用配置代码记录" />
+    
+  </div>
+
+  <div class="content">
+    <h2 class="ui medium header">
+      <a href="https://JackTheMico.github.io/posts/python-logging/">Python 日志常用配置代码记录</a>
+    </h2>
+    <div class="meta">
+      <p class="date">Monday, Jan 1, 0001</p>
+      <p class="author">@ [Jack Deng]</p>
+    </div>
+    <div class="description">
+      Python 日志常用配置代码记录 条件允许，能用 loguru 就用 loguru 吧，方便好使！ 标准库 logging import logging from logging.handlers import TimedRotatingFileHandler logpath = &#34;logging file path&#34; logger = logging.getLogger(logpath) logger.setLevel(logging.DEBUG) basicfmt = &#34;%(asctime)s- %(filename)s[line:%(lineno)d] - %(levelname)s:%(message)s&#34; datefmt = &#34;%Y-%m-%d%H:%M:%S&#34; formatter = logging.Formatter(basicfmt, datefmt) chlr = logging.StreamHandler() chlr.setFormatter(formatter) chlr.setLevel(conslevel) fhlr = TimedRotatingFileHandler(logpath, when=when,
+    </div>
+  </div>
+
+  <div class="extra content">
+    <a>
+      <i class="clock icon"></i>
+      1 分钟阅读
+    </a>
+  </div>
+</article>
+
+    </div>
   
 </div>
 
