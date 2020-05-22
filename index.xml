@@ -11,14 +11,5 @@
 	<atom:link href="https://JackTheMico.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
-    <item>
-      <title></title>
-      <link>https://JackTheMico.github.io/posts/cisp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://JackTheMico.github.io/posts/cisp/</guid>
-      <description>CISP国家注册信息安全培训@安全开发与支撑技术学习笔记 安全工程与运营 什么是安全工程 安全工程是指采用工程的概念、原理、技术和方法，来研究、实</description>
-    </item>
-    
   </channel>
 </rss>
