@@ -7,6 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;知识共享许可协议&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;本作品采用&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&lt;/a&gt;进行许可。</copyright>
+    <lastBuildDate>Tue, 26 May 2020 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://JackTheMico.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +15,19 @@
     <item>
       <title>Python 日志常用配置代码记录</title>
       <link>https://JackTheMico.github.io/posts/python-logging/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
       
       <guid>https://JackTheMico.github.io/posts/python-logging/</guid>
       <description>Python 日志常用配置代码记录 条件允许，能用 loguru 就用 loguru 吧，方便好使！ 标准库 logging import logging from logging.handlers import TimedRotatingFileHandler logpath = &amp;#34;logging file path&amp;#34; logger = logging.getLogger(logpath) logger.setLevel(logging.DEBUG) basicfmt = &amp;#34;%(asctime)s- %(filename)s[line:%(lineno)d] - %(levelname)s:%(message)s&amp;#34; datefmt = &amp;#34;%Y-%m-%d%H:%M:%S&amp;#34; formatter = logging.Formatter(basicfmt, datefmt) chlr = logging.StreamHandler() chlr.setFormatter(formatter) chlr.setLevel(conslevel) fhlr = TimedRotatingFileHandler(logpath, when=when,</description>
+    </item>
+    
+    <item>
+      <title>记录下我曾经用过或接触过的自动化工具</title>
+      <link>https://JackTheMico.github.io/posts/autotools/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://JackTheMico.github.io/posts/autotools/</guid>
+      <description>RobotFramework Github 地址 Python 语言实现，常用来做App 自动化测试、接口自动化测试、浏览器相关的自动化操作。使用专门的 .robot 脚本来编写自动化的操作，操作浏览器需要安装</description>
     </item>
     
   </channel>
