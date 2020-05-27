@@ -8,17 +8,7 @@
   </url>
   
   <url>
-    <loc>https://JackTheMico.github.io/tags/auto/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://JackTheMico.github.io/categories/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JackTheMico.github.io/categories/codes/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
@@ -29,11 +19,6 @@
   
   <url>
     <loc>https://JackTheMico.github.io/tags/logging/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JackTheMico.github.io/categories/me/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
@@ -53,17 +38,37 @@
   </url>
   
   <url>
+    <loc>https://JackTheMico.github.io/categories/python%E4%BB%A3%E7%A0%81/</loc>
+    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://JackTheMico.github.io/tags/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://JackTheMico.github.io/categories/tools/</loc>
+    <loc>https://JackTheMico.github.io/about/desc/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://JackTheMico.github.io/about/desc/</loc>
+    <loc>https://JackTheMico.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/categories/%E6%88%91%E8%87%AA%E5%B7%B1/</loc>
+    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/</loc>
+    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
