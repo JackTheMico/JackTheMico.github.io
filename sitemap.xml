@@ -3,27 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://JackTheMico.github.io/categories/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/posts/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/tags/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/categories/%E5%B0%8F%E7%86%8A/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/posts/xnxs/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://JackTheMico.github.io/tags/%E8%90%8C%E5%AE%A0/</loc>
+    <lastmod>2020-05-27T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://JackTheMico.github.io/about/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://JackTheMico.github.io/categories/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JackTheMico.github.io/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://JackTheMico.github.io/tags/logging/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JackTheMico.github.io/posts/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
@@ -39,11 +59,6 @@
   
   <url>
     <loc>https://JackTheMico.github.io/categories/python%E4%BB%A3%E7%A0%81/</loc>
-    <lastmod>2020-05-26T00:00:00+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://JackTheMico.github.io/tags/</loc>
     <lastmod>2020-05-26T00:00:00+08:00</lastmod>
   </url>
   
