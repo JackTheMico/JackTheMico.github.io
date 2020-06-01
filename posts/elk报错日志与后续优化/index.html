@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-Python 日志常用配置代码记录
+ELK报错日志与后续优化
 </title>
 
     
@@ -15,30 +15,27 @@ Python 日志常用配置代码记录
 
   
   <meta name="author" content="[Jack Deng]" />
-  <meta name="description" content="Python 日志常用配置代码记录 条件允许，能用 loguru 就用 loguru 吧，方便好使！
-" />
+  <meta name="description" content="Elasticsearch 警告、错误日志 [2020-05-29 五][WARN ][o.e.m.j.JvmGcMonitorService] &amp;hellip; overhead, spent [670ms] collecting in the last [1s] 该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去" />
 
 
 
 <meta name="generator" content="Hugo 0.71.1" />
 
-<link rel="canonical" href="https://JackTheMico.github.io/posts/python-logging/" />
+<link rel="canonical" href="https://JackTheMico.github.io/posts/elk%E6%8A%A5%E9%94%99%E6%97%A5%E5%BF%97%E4%B8%8E%E5%90%8E%E7%BB%AD%E4%BC%98%E5%8C%96/" />
 
 
-<meta property="og:title" content="Python 日志常用配置代码记录" />
-<meta property="og:description" content="Python 日志常用配置代码记录
-条件允许，能用 loguru 就用 loguru 吧，方便好使！" />
+<meta property="og:title" content="ELK报错日志与后续优化" />
+<meta property="og:description" content="Elasticsearch 警告、错误日志 [2020-05-29 五][WARN ][o.e.m.j.JvmGcMonitorService] &hellip; overhead, spent [670ms] collecting in the last [1s] 该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://JackTheMico.github.io/posts/python-logging/" />
-<meta property="article:published_time" content="2020-05-26T00:00:00+08:00" />
-<meta property="article:modified_time" content="2020-05-26T00:00:00+08:00" />
+<meta property="og:url" content="https://JackTheMico.github.io/posts/elk%E6%8A%A5%E9%94%99%E6%97%A5%E5%BF%97%E4%B8%8E%E5%90%8E%E7%BB%AD%E4%BC%98%E5%8C%96/" />
+<meta property="article:published_time" content="2020-06-01T00:00:00+08:00" />
+<meta property="article:modified_time" content="2020-06-01T00:00:00+08:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Python 日志常用配置代码记录"/>
-<meta name="twitter:description" content="Python 日志常用配置代码记录
-条件允许，能用 loguru 就用 loguru 吧，方便好使！"/>
+<meta name="twitter:title" content="ELK报错日志与后续优化"/>
+<meta name="twitter:description" content="Elasticsearch 警告、错误日志 [2020-05-29 五][WARN ][o.e.m.j.JvmGcMonitorService] &hellip; overhead, spent [670ms] collecting in the last [1s] 该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去"/>
 
 
 <link rel="stylesheet" href="/css/github-markdown.css" />
@@ -90,68 +87,41 @@ Python 日志常用配置代码记录
     <section class="ui top attached segment" id="dream-save-post-as-img">
       <header style="margin-top: 0 !important;">
         <h2 class="ui header">
-          Python 日志常用配置代码记录
-          <div class="sub header">@ [Jack Deng] · Tuesday, May 26, 2020 · 1 分钟阅读 · 更新于 May 26, 2020</div>
+          ELK报错日志与后续优化
+          <div class="sub header">@ [Jack Deng] · Monday, Jun 1, 2020 · 1 分钟阅读 · 更新于 Jun 1, 2020</div>
         </h2>
       </header>
-      <article style="margin-top: 2rem;"><h2 id="python-日志常用配置代码记录">Python 日志常用配置代码记录</h2>
-<p>条件允许，能用 loguru 就用 loguru 吧，方便好使！</p>
-<h3 id="标准库-logging">标准库 logging</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
-<span style="color:#f92672">from</span> logging.handlers <span style="color:#f92672">import</span> TimedRotatingFileHandler
-
-logpath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;logging file path&#34;</span>
-logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(logpath)
-logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
-basicfmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(filename)s</span><span style="color:#e6db74">[line:</span><span style="color:#e6db74">%(lineno)d</span><span style="color:#e6db74">] - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74">:</span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>
-datefmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %H:%M:%S&#34;</span>
-formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(basicfmt, datefmt)
-chlr <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
-chlr<span style="color:#f92672">.</span>setFormatter(formatter)
-chlr<span style="color:#f92672">.</span>setLevel(conslevel)
-fhlr <span style="color:#f92672">=</span> TimedRotatingFileHandler(logpath,
-                                when<span style="color:#f92672">=</span>when,
-                                interval<span style="color:#f92672">=</span>interval)
-fhlr<span style="color:#f92672">.</span>setFormatter(formatter)
-fhlr<span style="color:#f92672">.</span>setLevel(filelevel)
-logger<span style="color:#f92672">.</span>addHandler(chlr)
-logger<span style="color:#f92672">.</span>addHandler(fhlr)
-</code></pre></div><h3 id="loguru">loguru</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> loguru <span style="color:#f92672">import</span> logger
-
-<span style="color:#75715e"># No Handler, no Formatter, no Filter: one function to rule them all</span>
-logger<span style="color:#f92672">.</span>add(sys<span style="color:#f92672">.</span>stderr, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{time} {level} {message}&#34;</span>, filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my_module&#34;</span>, level<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;INFO&#34;</span>)
-logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">&#34;That&#39;s it, beautiful and simple logging!&#34;</span>)
-
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_1.log&#34;</span>, rotation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500 MB&#34;</span>)    <span style="color:#75715e"># Automatically rotate too big file</span>
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_2.log&#34;</span>, rotation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12:00&#34;</span>)     <span style="color:#75715e"># New file is created each day at noon</span>
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_3.log&#34;</span>, rotation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1 week&#34;</span>)    <span style="color:#75715e"># Once the file is too old, it&#39;s rotated</span>
-
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_X.log&#34;</span>, retention<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10 days&#34;</span>)  <span style="color:#75715e"># Cleanup after some time</span>
-
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_Y.log&#34;</span>, compression<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zip&#34;</span>)    <span style="color:#75715e"># Save some loved space</span>
-
-logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;If you&#39;re using Python {}, prefer {feature} of course!&#34;</span>, <span style="color:#ae81ff">3.6</span>, feature<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;f-strings&#34;</span>)
-
-<span style="color:#a6e22e">@logger.catch</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">my_function</span>(x, y, z):
-    <span style="color:#75715e"># An error? It&#39;s caught anyway!</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (x <span style="color:#f92672">+</span> y <span style="color:#f92672">+</span> z)
-
-<span style="color:#75715e"># Pretty logging with colors</span>
-logger<span style="color:#f92672">.</span>add(sys<span style="color:#f92672">.</span>stdout, colorize<span style="color:#f92672">=</span>True, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;green&gt;{time}&lt;/green&gt; &lt;level&gt;{message}&lt;/level&gt;&#34;</span>)
-
-<span style="color:#75715e"># All sinks added to the logger are thread-safe by default.</span>
-<span style="color:#75715e"># They are not multiprocess-safe, but you can enqueue the messages to ensure logs integrity.</span>
-<span style="color:#75715e"># This same argument can also be used if you want async logging.</span>
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;somefile.log&#34;</span>, enqueue<span style="color:#f92672">=</span>True)
-</code></pre></div></article>
+      <article style="margin-top: 2rem;"><h2 id="elasticsearch-警告-错误日志">Elasticsearch 警告、错误日志</h2>
+<ol>
+<li>
+<p><span class="timestamp-wrapper"><span class="timestamp">[2020-05-29 五]</span></span>[WARN ][o.e.m.j.JvmGcMonitorService] &hellip; overhead, spent [670ms] collecting in the last [1s]
+该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去检查其他节点的状态，如果任何节点的垃圾回收时间超过30秒（Garbage collection duration），则会导致节点脱离集群。解决方案：通过增加ping_timeout的时间，和增加ping_retries的次数来防止节点错误的脱离集群，可以使节点有充足的时间进行full GC。</p>
+<pre><code class="language-dot" data-lang="dot">     discovery.zen.fd.ping_timeout: 1000s
+     discovery.zen.fd.ping_retries: 10
+</code></pre><p><a href="https://my.oschina.net/u/3625378/blog/1793796">参考链接</a></p>
+</li>
+<li>
+<p><span class="timestamp-wrapper"><span class="timestamp">[2020-05-29 五]</span></span>[WARN ][o.e.c.r.a.DiskThresholdMonitor] [node-26] high disk watermark <code>[90%]</code> &hellip;&hellip;, shards will be relocated away from this node
+节点机器磁盘空间不足了，可以通过监控此日志中出现的关键字来及时告警。</p>
+</li>
+<li>
+<p>&hellip; org.elasticsearch.transport.RemoteTransportException: [node-123][xx.xxx.xxx.xxx:9200]
+表明 node 123 这个节点出现了问题，需要及时检查并处理</p>
+</li>
+</ol>
+<h2 id="logstash-警告-错误日志">Logstash 警告、错误日志</h2>
+<ol>
+<li>[INFO ]&hellip; Retrying individual bulk actions that failed or were rejected by the previous bulk request.
+Elasticsearch 节点出现问题导致 logstash 无法插入数据时会出现此日志，后续可以监控此日志中的关键字来进行及时告警通知。</li>
+<li>此外，出现 1 中的情况后，在重启 logstash 时可能会出现 logstash 依然在不断地重试之前错误的请求而导致无法正常工作的情况，此时删除 &ldquo;&ndash;path.data&rdquo; 参数对应目录中的文件，再重启 logstash 即可使其正常工作。</li>
+</ol>
+</article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
         
-          <a class="ui label" href="/tags/python" title="Python">Python</a>
+          <a class="ui label" href="/tags/elk" title="ELK">ELK</a>
         
           <a class="ui label" href="/tags/logging" title="logging">logging</a>
         
@@ -178,8 +148,8 @@ logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;s
 
 
           var disqus_config = function () {
-            this.page.url = 'https:\/\/JackTheMico.github.io\/posts\/python-logging\/';  
-            this.page.identifier = '\/posts\/python-logging\/'; 
+            this.page.url = 'https:\/\/JackTheMico.github.io\/posts\/elk%E6%8A%A5%E9%94%99%E6%97%A5%E5%BF%97%E4%B8%8E%E5%90%8E%E7%BB%AD%E4%BC%98%E5%8C%96\/';  
+            this.page.identifier = '\/posts\/elk%E6%8A%A5%E9%94%99%E6%97%A5%E5%BF%97%E4%B8%8E%E5%90%8E%E7%BB%AD%E4%BC%98%E5%8C%96\/'; 
           };
 
           (function() { 
