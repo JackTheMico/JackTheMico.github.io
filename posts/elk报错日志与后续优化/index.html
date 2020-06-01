@@ -15,7 +15,8 @@ ELK报错日志与后续优化
 
   
   <meta name="author" content="[Jack Deng]" />
-  <meta name="description" content="Elasticsearch 警告、错误日志 [2020-05-29 五][WARN ][o.e.m.j.JvmGcMonitorService] &amp;hellip; overhead, spent [670ms] collecting in the last [1s] 该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去" />
+  <meta name="description" content="记录下ELK 相关的错误日志与处理、优化方法。
+" />
 
 
 
@@ -25,7 +26,7 @@ ELK报错日志与后续优化
 
 
 <meta property="og:title" content="ELK报错日志与后续优化" />
-<meta property="og:description" content="Elasticsearch 警告、错误日志 [2020-05-29 五][WARN ][o.e.m.j.JvmGcMonitorService] &hellip; overhead, spent [670ms] collecting in the last [1s] 该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去" />
+<meta property="og:description" content="记录下ELK 相关的错误日志与处理、优化方法。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://JackTheMico.github.io/posts/elk%E6%8A%A5%E9%94%99%E6%97%A5%E5%BF%97%E4%B8%8E%E5%90%8E%E7%BB%AD%E4%BC%98%E5%8C%96/" />
 <meta property="article:published_time" content="2020-06-01T00:00:00+08:00" />
@@ -35,7 +36,7 @@ ELK报错日志与后续优化
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ELK报错日志与后续优化"/>
-<meta name="twitter:description" content="Elasticsearch 警告、错误日志 [2020-05-29 五][WARN ][o.e.m.j.JvmGcMonitorService] &hellip; overhead, spent [670ms] collecting in the last [1s] 该日志是由于垃圾回收时间过长产生的，ES 内存使用和GC指标默认情况下，主节点每30秒会去"/>
+<meta name="twitter:description" content="记录下ELK 相关的错误日志与处理、优化方法。"/>
 
 
 <link rel="stylesheet" href="/css/github-markdown.css" />
@@ -91,7 +92,8 @@ ELK报错日志与后续优化
           <div class="sub header">@ [Jack Deng] · Monday, Jun 1, 2020 · 1 分钟阅读 · 更新于 Jun 1, 2020</div>
         </h2>
       </header>
-      <article style="margin-top: 2rem;"><h2 id="elasticsearch-警告-错误日志">Elasticsearch 警告、错误日志</h2>
+      <article style="margin-top: 2rem;"><p>记录下ELK 相关的错误日志与处理、优化方法。</p>
+<h2 id="elasticsearch-警告-错误日志">Elasticsearch 警告、错误日志</h2>
 <ol>
 <li>
 <p><span class="timestamp-wrapper"><span class="timestamp">[2020-05-29 五]</span></span>[WARN ][o.e.m.j.JvmGcMonitorService] &hellip; overhead, spent [670ms] collecting in the last [1s]
@@ -114,8 +116,7 @@ ELK报错日志与后续优化
 <li>[INFO ]&hellip; Retrying individual bulk actions that failed or were rejected by the previous bulk request.
 Elasticsearch 节点出现问题导致 logstash 无法插入数据时会出现此日志，后续可以监控此日志中的关键字来进行及时告警通知。</li>
 <li>此外，出现 1 中的情况后，在重启 logstash 时可能会出现 logstash 依然在不断地重试之前错误的请求而导致无法正常工作的情况，此时删除 &ldquo;&ndash;path.data&rdquo; 参数对应目录中的文件，再重启 logstash 即可使其正常工作。</li>
-</ol>
-</article>
+</ol></article>
     </section>
 
     <footer class="ui attached segment dream-tags">
