@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-Python 日志常用配置代码记录
+我的第一把客制化机械键盘，Alpha28
 </title>
 
     
@@ -15,30 +15,27 @@ Python 日志常用配置代码记录
 
   
   <meta name="author" content="[Jack Deng]" />
-  <meta name="description" content="Python 日志常用配置代码记录 条件允许，能用 loguru 就用 loguru 吧，方便好使！
-" />
+  <meta name="description" content="相关参考资料 项目官方仓库 半定位板PCB 设计仓库 QMK 按键映射示例 QMK Configurator QMK Toolbox 中文参考教程 解决“无法识别的USB设备”问题 实际操作中的一些心得 打样 PCB 板" />
 
 
 
 <meta name="generator" content="Hugo 0.75.1" />
 
-<link rel="canonical" href="https://JackTheMico.github.io/posts/python-logging/" />
+<link rel="canonical" href="https://JackTheMico.github.io/posts/alpha28/" />
 
 
-<meta property="og:title" content="Python 日志常用配置代码记录" />
-<meta property="og:description" content="Python 日志常用配置代码记录
-条件允许，能用 loguru 就用 loguru 吧，方便好使！" />
+<meta property="og:title" content="我的第一把客制化机械键盘，Alpha28" />
+<meta property="og:description" content="相关参考资料 项目官方仓库 半定位板PCB 设计仓库 QMK 按键映射示例 QMK Configurator QMK Toolbox 中文参考教程 解决“无法识别的USB设备”问题 实际操作中的一些心得 打样 PCB 板" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://JackTheMico.github.io/posts/python-logging/" />
-<meta property="article:published_time" content="2020-05-26T00:00:00+08:00" />
-<meta property="article:modified_time" content="2020-05-26T00:00:00+08:00" />
+<meta property="og:url" content="https://JackTheMico.github.io/posts/alpha28/" />
+<meta property="article:published_time" content="2020-10-13T00:00:00+08:00" />
+<meta property="article:modified_time" content="2020-10-13T00:00:00+08:00" />
 
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Python 日志常用配置代码记录"/>
-<meta name="twitter:description" content="Python 日志常用配置代码记录
-条件允许，能用 loguru 就用 loguru 吧，方便好使！"/>
+<meta name="twitter:title" content="我的第一把客制化机械键盘，Alpha28"/>
+<meta name="twitter:description" content="相关参考资料 项目官方仓库 半定位板PCB 设计仓库 QMK 按键映射示例 QMK Configurator QMK Toolbox 中文参考教程 解决“无法识别的USB设备”问题 实际操作中的一些心得 打样 PCB 板"/>
 
 
 <link rel="stylesheet" href="/css/github-markdown.css" />
@@ -90,70 +87,43 @@ Python 日志常用配置代码记录
     <section class="ui top attached segment" id="dream-save-post-as-img">
       <header style="margin-top: 0 !important;">
         <h2 class="ui header">
-          Python 日志常用配置代码记录
-          <div class="sub header">@ [Jack Deng] · Tuesday, May 26, 2020 · 1 分钟阅读 · 更新于 May 26, 2020</div>
+          我的第一把客制化机械键盘，Alpha28
+          <div class="sub header">@ [Jack Deng] · Tuesday, Oct 13, 2020 · 2 分钟阅读 · 更新于 Oct 13, 2020</div>
         </h2>
       </header>
-      <article style="margin-top: 2rem;"><h2 id="python-日志常用配置代码记录">Python 日志常用配置代码记录</h2>
-<p>条件允许，能用 loguru 就用 loguru 吧，方便好使！</p>
-<h3 id="标准库-logging">标准库 logging</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> logging
-<span style="color:#f92672">from</span> logging.handlers <span style="color:#f92672">import</span> TimedRotatingFileHandler
-
-logpath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;logging file path&#34;</span>
-logger <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>getLogger(logpath)
-logger<span style="color:#f92672">.</span>setLevel(logging<span style="color:#f92672">.</span>DEBUG)
-basicfmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%(asctime)s</span><span style="color:#e6db74"> - </span><span style="color:#e6db74">%(filename)s</span><span style="color:#e6db74">[line:</span><span style="color:#e6db74">%(lineno)d</span><span style="color:#e6db74">] - </span><span style="color:#e6db74">%(levelname)s</span><span style="color:#e6db74">:</span><span style="color:#e6db74">%(message)s</span><span style="color:#e6db74">&#34;</span>
-datefmt <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> %H:%M:%S&#34;</span>
-formatter <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>Formatter(basicfmt, datefmt)
-chlr <span style="color:#f92672">=</span> logging<span style="color:#f92672">.</span>StreamHandler()
-chlr<span style="color:#f92672">.</span>setFormatter(formatter)
-chlr<span style="color:#f92672">.</span>setLevel(conslevel)
-fhlr <span style="color:#f92672">=</span> TimedRotatingFileHandler(logpath,
-                                when<span style="color:#f92672">=</span>when,
-                                interval<span style="color:#f92672">=</span>interval)
-fhlr<span style="color:#f92672">.</span>setFormatter(formatter)
-fhlr<span style="color:#f92672">.</span>setLevel(filelevel)
-logger<span style="color:#f92672">.</span>addHandler(chlr)
-logger<span style="color:#f92672">.</span>addHandler(fhlr)
-</code></pre></div><h3 id="loguru">loguru</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> loguru <span style="color:#f92672">import</span> logger
-
-<span style="color:#75715e"># No Handler, no Formatter, no Filter: one function to rule them all</span>
-logger<span style="color:#f92672">.</span>add(sys<span style="color:#f92672">.</span>stderr, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{time} {level} {message}&#34;</span>, filter<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;my_module&#34;</span>, level<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;INFO&#34;</span>)
-logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">&#34;That&#39;s it, beautiful and simple logging!&#34;</span>)
-
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_1.log&#34;</span>, rotation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;500 MB&#34;</span>)    <span style="color:#75715e"># Automatically rotate too big file</span>
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_2.log&#34;</span>, rotation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;12:00&#34;</span>)     <span style="color:#75715e"># New file is created each day at noon</span>
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_3.log&#34;</span>, rotation<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1 week&#34;</span>)    <span style="color:#75715e"># Once the file is too old, it&#39;s rotated</span>
-
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_X.log&#34;</span>, retention<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;10 days&#34;</span>)  <span style="color:#75715e"># Cleanup after some time</span>
-
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;file_Y.log&#34;</span>, compression<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zip&#34;</span>)    <span style="color:#75715e"># Save some loved space</span>
-
-logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;If you&#39;re using Python {}, prefer {feature} of course!&#34;</span>, <span style="color:#ae81ff">3.6</span>, feature<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;f-strings&#34;</span>)
-
-<span style="color:#a6e22e">@logger.catch</span>
-<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">my_function</span>(x, y, z):
-    <span style="color:#75715e"># An error? It&#39;s caught anyway!</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">/</span> (x <span style="color:#f92672">+</span> y <span style="color:#f92672">+</span> z)
-
-<span style="color:#75715e"># Pretty logging with colors</span>
-logger<span style="color:#f92672">.</span>add(sys<span style="color:#f92672">.</span>stdout, colorize<span style="color:#f92672">=</span>True, format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;&lt;green&gt;{time}&lt;/green&gt; &lt;level&gt;{message}&lt;/level&gt;&#34;</span>)
-
-<span style="color:#75715e"># All sinks added to the logger are thread-safe by default.</span>
-<span style="color:#75715e"># They are not multiprocess-safe, but you can enqueue the messages to ensure logs integrity.</span>
-<span style="color:#75715e"># This same argument can also be used if you want async logging.</span>
-logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;somefile.log&#34;</span>, enqueue<span style="color:#f92672">=</span>True)
-</code></pre></div></article>
+      <article style="margin-top: 2rem;"><h2 id="相关参考资料">相关参考资料</h2>
+<ul>
+<li><a href="https://github.com/PyrooL/Alpha">项目官方仓库</a></li>
+<li><a href="https://github.com/The-Royal/Alpha28%5FHalf-Plate%5FPCB%5FCase">半定位板PCB 设计仓库</a></li>
+<li><a href="https://github.com/vderm/Alpha28Keymap">QMK 按键映射示例</a></li>
+<li><a href="https://config.qmk.fm/#/alpha/LAYOUT">QMK Configurator</a></li>
+<li><a href="https://github.com/qmk/qmk%5Ftoolbox">QMK Toolbox</a></li>
+<li><a href="https://post.smzdm.com/p/amm05w4z/">中文参考教程</a></li>
+<li><a href="https://blog.csdn.net/wh201906/article/details/103861359%20">解决“无法识别的USB设备”问题</a></li>
+</ul>
+<h2 id="实际操作中的一些心得">实际操作中的一些心得</h2>
+<h3 id="打样-pcb-板">打样 PCB 板</h3>
+<p>我选择的是深圳嘉立创这家，虽然客服都比较忙，但是态度比较好而且价格也还算便宜。需要注意的是项目官方仓库里的 Plate 文件夹里就有定位板和可选底板的 svg 和 dxf 文件。直接拿着这些文件去某宝找家定制亚克力的就能做出来，就可以不用那个半定位板的 PCB 了。我是没经验，以为定位板和 PCB 应该全部包给一家公司，所以才找到并使用了这个半定位板。算下来 PCB 一张也就8、9块的样子，直接用作者画的定位板文件做亚克力定位板应该也不贵。</p>
+<h3 id="采购零件">采购零件</h3>
+<p>二极管真的很便宜，某宝随便一搜就有不到3块钱买100个还包邮的。
+Arduino Pro Micro 建议上阿里巴巴批发，我一开始是从某宝买的，结果拿到手发现 QMK Toolbox 还识别不了，后来查资料才知道需要用螺丝刀或者镊子短接下两个引脚才能刷入键盘固件。再然后用一阵之后发现这板子的 Micro usb 接口接触不好了，而且这次是直接焊接上去的，我就干脆重新从阿里巴巴上买了两块重新做了。第二次就加了个配合 Pro Micro 使用的底座，某宝搜 &ldquo;dip 24 插座“就能找到，也很便宜。轴我用的是高特防尘轴，但是由于一开始的那块报废了，所以后来从某宝上买了改热拔插的铜鸡眼，用别的轴想要热拔插的话也要买这个，或者买专门的底座。铜鸡眼不贵，几块钱就解决了，专门的底座应该要贵一些。卫星轴和键帽就没啥说的了，根据喜好来买就行了。螺丝和螺母根据需要在某宝上买 M3 或者 M2 的就行了。</p>
+<h3 id="焊接注意事项">焊接注意事项</h3>
+<p>先焊二极管，要注意方向别焊反了，黑色的那头要对着方块的焊点，然后在焊插座或者把 Pro Micro 直接焊到 PCB 上之前，先把反面对应位置的两个轴给焊了，应该是 W 和 S 的位置。如果直接把插座或者 Pro Micro 焊上去了，这两个轴就不好焊接了。</p>
+<h3 id="测试">测试</h3>
+<p>装个 KeyboardTest 来对键盘进行测试就行了</p>
+<h2 id="实际效果">实际效果</h2>
+<p><img src="/ox-hugo/1.jpg" alt="">
+<img src="/ox-hugo/2.jpg" alt="">
+<img src="/ox-hugo/3.jpg" alt=""></p>
+<h2 id="后记">后记</h2>
+<p>这个键盘要做出来还是比较简单的，作者写的教程已经比较全面了，基本按照流程走下来就行。后续我可能会找个设计好的外壳去某宝打印出来装上，感觉还是有个外壳要好看一些。下一把我打算照着 <a href="https://github.com/YCF/Trident">Trident</a> 项目做把无线分体普郎克排列的键盘，Alpha28 毕竟还是太小了点儿，也没有人体工程，熟悉双拼五笔的拿来打字还可以，撸代码估计就不太适合了。</p>
+</article>
     </section>
 
     <footer class="ui attached segment dream-tags">
       
         
-          <a class="ui label" href="/tags/python" title="Python">Python</a>
-        
-          <a class="ui label" href="/tags/logging" title="logging">logging</a>
+          <a class="ui label" href="/tags/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98" title="机械键盘">机械键盘</a>
         
       
       <div
@@ -178,8 +148,8 @@ logger<span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#34;s
 
 
           var disqus_config = function () {
-            this.page.url = 'https:\/\/JackTheMico.github.io\/posts\/python-logging\/';  
-            this.page.identifier = '\/posts\/python-logging\/'; 
+            this.page.url = 'https:\/\/JackTheMico.github.io\/posts\/alpha28\/';  
+            this.page.identifier = '\/posts\/alpha28\/'; 
           };
 
           (function() { 

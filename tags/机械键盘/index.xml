@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>机械键盘 on Jack Deng 的博客</title>
+    <link>https://JackTheMico.github.io/tags/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98/</link>
+    <description>Recent content in 机械键盘 on Jack Deng 的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-Hans</language>
+    <copyright>&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;&lt;img alt=&#34;知识共享许可协议&#34; style=&#34;border-width:0&#34; src=&#34;https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png&#34; /&gt;&lt;/a&gt;&lt;br /&gt;本作品采用&lt;a rel=&#34;license&#34; href=&#34;http://creativecommons.org/licenses/by-nc-sa/4.0/&#34;&gt;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&lt;/a&gt;进行许可。</copyright>
+    <lastBuildDate>Tue, 13 Oct 2020 00:00:00 +0800</lastBuildDate><atom:link href="https://JackTheMico.github.io/tags/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一把客制化机械键盘，Alpha28</title>
+      <link>https://JackTheMico.github.io/posts/alpha28/</link>
+      <pubDate>Tue, 13 Oct 2020 00:00:00 +0800</pubDate>
+      
+      <guid>https://JackTheMico.github.io/posts/alpha28/</guid>
+      <description>相关参考资料 项目官方仓库 半定位板PCB 设计仓库 QMK 按键映射示例 QMK Configurator QMK Toolbox 中文参考教程 解决“无法识别的USB设备”问题 实际操作中的一些心得 打样 PCB 板</description>
+    </item>
+    
+  </channel>
+</rss>
